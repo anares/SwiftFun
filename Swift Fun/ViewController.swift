@@ -15,10 +15,24 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myLabel: UILabel!
     
+   
+    
+    @IBOutlet weak var topTextField: UITextField!
+    
+    
+    @IBOutlet weak var bottomTextField: UITextField!
     
     @IBAction func btnTapped(_ sender: Any) {
+        let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
         
-        btnCount = btnCount + 1
+    
+//        myLabel.text = String(sum)
+ 
+//Better way to visualize
+        
+        myLabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)"
+/*
+        btnCount += 1
         if btnCount == 10 {
             if (view.backgroundColor != UIColor.red) {
                 view.backgroundColor = UIColor.red
@@ -28,6 +42,7 @@ class ViewController: UIViewController {
             myLabel.text = "New Background Color"
             btnCount = 0
         }
+ */
     }
     
     override func viewDidLoad() {

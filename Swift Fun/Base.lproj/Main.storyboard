@@ -49,15 +49,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c3E-IU-q46">
+                                <rect key="frame" x="163" y="148" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="c3E-IU-q46" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ze-fl-1hf"/>
                             <constraint firstItem="6dg-D5-jxX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6UU-Pw-a5h"/>
                             <constraint firstItem="VOI-b0-zYj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="764-I3-ev4"/>
                             <constraint firstItem="qZc-u5-WRl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="85C-4D-Jlw"/>
                             <constraint firstItem="VOI-b0-zYj" firstAttribute="top" secondItem="6dg-D5-jxX" secondAttribute="bottom" constant="50" id="BIm-lJ-NXe"/>
                             <constraint firstItem="A6n-ge-Pvz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DqU-bv-Wmf"/>
                             <constraint firstItem="A6n-ge-Pvz" firstAttribute="top" secondItem="VOI-b0-zYj" secondAttribute="bottom" constant="14.5" id="Mrk-X4-KNR"/>
+                            <constraint firstItem="6dg-D5-jxX" firstAttribute="top" secondItem="c3E-IU-q46" secondAttribute="bottom" constant="20" id="W4z-y7-0nh"/>
                             <constraint firstItem="A6n-ge-Pvz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m59-uz-5xh"/>
                             <constraint firstItem="qZc-u5-WRl" firstAttribute="top" secondItem="A6n-ge-Pvz" secondAttribute="bottom" constant="10" id="mAF-U6-aaR"/>
                         </constraints>
@@ -65,6 +70,7 @@
                     </view>
                     <connections>
                         <outlet property="TopTextField" destination="6UU-Pw-a5h" id="TwI-tl-wjc"/>
+                        <outlet property="additionSwitch" destination="c3E-IU-q46" id="5bA-E5-DS7"/>
                         <outlet property="bottomTextField" destination="VOI-b0-zYj" id="nfF-F4-gcb"/>
                         <outlet property="myLabel" destination="A6n-ge-Pvz" id="L2Y-DA-fDX"/>
                         <outlet property="topTextField" destination="6dg-D5-jxX" id="3Ef-Ra-OQk"/>

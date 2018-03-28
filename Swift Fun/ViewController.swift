@@ -22,15 +22,26 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var bottomTextField: UITextField!
     
+    
+    @IBOutlet weak var additionSwitch: UISwitch!
+    
+    
     @IBAction func btnTapped(_ sender: Any) {
-        let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
+        let addition = additionSwitch.isOn
         
+        if addition {
+        let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
+            myLabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)"
+        } else {
+            let sum = Double(topTextField.text!)! - Double(bottomTextField.text!)!
+            myLabel.text = "\(topTextField.text!) - \(bottomTextField.text!) = \(sum)"
+        }
     
 //        myLabel.text = String(sum)
  
 //Better way to visualize
         
-        myLabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)"
+        
 /*
         btnCount += 1
         if btnCount == 10 {
